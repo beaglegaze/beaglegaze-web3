@@ -6,8 +6,10 @@ async function main() {
     
     console.log("Deploying UsageContract...");
     
-    // Deploy the contract
-    const usageContract = await UsageContract.deploy();
+    // Set the subscription price in wei (example: 0.01 ETH)
+    const subscriptionPriceInWei = ethers.parseEther("0.01");
+    // Deploy the contract with constructor argument
+    const usageContract = await UsageContract.deploy(subscriptionPriceInWei);
     
     // Wait for the contract to be deployed
     await usageContract.waitForDeployment();

@@ -18,7 +18,7 @@ npm install --global solc
 
 1. **Start Ethereum testnet**:
    ```bash
-   docker buildx build -t hardhat-testnet deploy/hardhat-testnet/.
+   docker buildx build -t hardhat-testnet .
    docker run -d -p 8545:8545 --rm --name hardhat-testnet hardhat-testnet
    ```
 
