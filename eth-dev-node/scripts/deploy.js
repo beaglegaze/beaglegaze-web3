@@ -18,8 +18,8 @@ async function main() {
     console.log("💰 Deployer balance:", ethers.formatEther(balance), "ETH");
 
     // Get the contract factory connected to the chosen signer
-    const UsageContract = await ethers.getContractFactory("UsageContract", wallet);
-    console.log("Deploying UsageContract...");
+    const UsageContract = await ethers.getContractFactory("Beaglegaze", wallet);
+    console.log("Deploying beaglegaze contract...");
 
     // Set the subscription price in wei (example: 0.01 ETH)
     const subscriptionPriceInWei = ethers.parseEther("0.01");
