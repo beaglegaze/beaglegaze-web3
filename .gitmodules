@@ -1,3 +1,4 @@
 [submodule "eth-dev-node/contracts"]
 	path = eth-dev-node/contracts
 	url = https://github.com/beaglegaze/beaglegaze-contracts.git
+	tag = v0.0.3
