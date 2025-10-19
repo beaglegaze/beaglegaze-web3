@@ -14,6 +14,12 @@
 npm install --global solc
 ```
 
+### Running Tests
+
+```bash
+web3j generate solidity -b contract/beaglegaze_sol_Beaglegaze.bin -a contract/beaglegaze_sol_Beaglegaze.abi -o tests/src/main/java -p web3.beaglegaze
+```
+
 ### Local Development Setup
 
 1. **Start Ethereum testnet**:
